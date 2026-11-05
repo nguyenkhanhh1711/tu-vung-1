@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Đọc hiểu A2–B1: Các chủ đề hiện đại</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,300;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#4a6c99;--blue2:#38567f;--paper:#f2efe8;--pi:#1d2638;--mute:#586378;--acc:#2f5a95;--ok:#1d7a4b;--okbg:#dcf0e4;--bad:#b83a52;--badbg:#f9e1e6;--line:rgba(29,38,56,.2);--hl:rgba(74,108,153,.13);--ti:#b9bec6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--blue:#1c2e4b;--blue2:#14233b;--paper:#232c3c;--pi:#e8ecf3;--mute:#9ba7bb;--acc:#8fb4e8;--ok:#7fe0a8;--okbg:rgba(80,200,140,.2);--bad:#ff93a8;--badbg:rgba(255,100,130,.18);--line:rgba(200,215,240,.22);--hl:rgba(143,180,232,.14);--ti:#6e7a90}}
+:root[data-theme="dark"]{color-scheme:dark;--blue:#1c2e4b;--blue2:#14233b;--paper:#232c3c;--pi:#e8ecf3;--mute:#9ba7bb;--acc:#8fb4e8;--ok:#7fe0a8;--okbg:rgba(80,200,140,.2);--bad:#ff93a8;--badbg:rgba(255,100,130,.18);--line:rgba(200,215,240,.22);--hl:rgba(143,180,232,.14);--ti:#6e7a90}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:58px}
+body{margin:0;min-height:100vh;background:radial-gradient(circle at 20% 10%,rgba(255,255,255,.12),transparent 50%) fixed,var(--blue);color:var(--pi);font:16px/1.7 "Be Vietnam Pro",system-ui,sans-serif;overflow-x:hidden}
+.mo{font-family:"IBM Plex Mono","Courier New",monospace}.sf{font-family:"Cormorant Garamond",Georgia,serif}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:4px;align-items:center;overflow-x:auto;padding:9px 14px;background:color-mix(in srgb,var(--blue2) 88%,transparent);backdrop-filter:blur(8px);font:13px "IBM Plex Mono",monospace}
+nav a{white-space:nowrap;color:#e8eef8;text-decoration:none;padding:3px 10px;border-radius:3px;opacity:.8}nav a:hover,nav a.on{background:rgba(255,255,255,.18);opacity:1}
+nav .sc{margin-left:auto;white-space:nowrap;color:#fff}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+#fx svg{position:absolute;opacity:.22;animation:dr 26s ease-in-out infinite alternate}
+@keyframes dr{to{transform:translate(40px,-60px) rotate(40deg)}}
+main{position:relative;z-index:1;max-width:820px;margin:auto;padding:24px 16px 80px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;background:var(--paper);box-shadow:0 14px 40px rgba(10,25,50,.35);overflow:hidden;animation:up .9s ease-out}
+@keyframes up{from{opacity:0;transform:translateY(24px)}}
+.hero .bl{background:var(--blue);min-height:330px;position:relative}.hero .bl svg{width:100%;height:100%;position:absolute;inset:0}
+.hero .bl svg g{animation:sw 9s ease-in-out infinite alternate;transform-origin:50% 100%}@keyframes sw{to{transform:rotate(3deg)}}
+.pa{padding:22px 20px;font:13px/1.65 "IBM Plex Mono",monospace;color:var(--pi)}
+.ti{font:italic 300 clamp(38px,8vw,56px)/1 "Cormorant Garamond",serif;color:var(--ti);border-bottom:1px solid var(--line);padding-bottom:8px;margin-bottom:12px}
+.pa p{margin:0 0 12px}.pa u{text-decoration-color:var(--acc)}
+@media(max-width:600px){.hero{grid-template-columns:1fr}.hero .bl{min-height:230px}}
+section{padding:36px 0 0}
+.pp{background:var(--paper);padding:22px 22px 10px;box-shadow:0 10px 30px rgba(10,25,50,.28)}
+.lb{font:12.5px "IBM Plex Mono",monospace;color:var(--mute);margin-bottom:2px}
+h2{font:italic 400 clamp(30px,6vw,42px)/1.1 "Cormorant Garamond",serif;margin:0 0 4px;color:var(--acc)}
+.sub{font:13px "IBM Plex Mono",monospace;color:var(--mute);margin:0 0 14px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.rv{opacity:0;transform:translateY(26px);transition:.8s}.rv.in{opacity:1;transform:none}
+.txt{font:14.5px/1.85 "IBM Plex Mono",monospace;text-align:justify;margin:10px 0}.txt b{background:var(--hl);padding:0 2px;font-weight:500}
+.bar{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.btn{font:13px "IBM Plex Mono",monospace;background:none;color:var(--pi);border:1px solid var(--pi);padding:5px 14px;cursor:pointer;transition:.2s}.btn:hover{background:var(--pi);color:var(--paper)}
+.vi{display:none;font-size:15px;color:var(--mute);border-left:3px solid var(--acc);padding-left:12px;margin:10px 0}.vi.show{display:block;animation:fd .4s}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0}th,td{text-align:left;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}th{font:400 12px "IBM Plex Mono",monospace;color:var(--mute)}
+.ip{font:13px "IBM Plex Mono",monospace;color:var(--mute)}
+.sp{cursor:pointer;background:none;border:0;font-size:16px;padding:0 4px}
+.fcw{perspective:1000px;max-width:430px;margin:6px auto}
+.fc{height:250px;position:relative;transform-style:preserve-3d;transition:transform .6s;cursor:pointer}.fc.f{transform:rotateY(180deg)}
+.fc>div{position:absolute;inset:0;backface-visibility:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;border:1px solid var(--pi);background:var(--hl)}
+.fc .bk{transform:rotateY(180deg);background:var(--paper)}
+.fc h3{font:italic 500 32px/1.15 "Cormorant Garamond",serif;margin:4px 0;color:var(--acc)}.fc small{font:12px "IBM Plex Mono",monospace;color:var(--mute)}
+.fc .vn{font:500 22px/1.4 "Be Vietnam Pro",sans-serif}
+.ctl{display:flex;justify-content:center;align-items:center;gap:12px;margin:14px 0 12px;font:13px "IBM Plex Mono",monospace}
+.q{border:1px solid var(--line);padding:13px 16px;margin:0 0 12px;background:color-mix(in srgb,var(--paper) 70%,#fff 30%)}
+.q>p{margin:0 0 8px;font-weight:500}.q small{font:12.5px "IBM Plex Mono",monospace;color:var(--acc)}
+.o{display:block;width:100%;text-align:left;font:inherit;font-size:15px;color:var(--pi);background:none;border:1px solid var(--line);padding:6px 12px;margin:5px 0;cursor:pointer;transition:.2s}
+.o:hover:not(:disabled){border-color:var(--acc);background:var(--hl)}.o:disabled{cursor:default}
+.o.ok{background:var(--okbg);border-color:var(--ok)}.o.no{background:var(--badbg);border-color:var(--bad);animation:sh .3s}
+@keyframes sh{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.ex{display:none;margin-top:8px;padding:9px 12px;font-size:14.5px;background:var(--hl)}.ex.show{display:block;animation:fd .4s}
+@keyframes fd{from{opacity:0;transform:translateY(-6px)}}
+input{font:inherit;font-size:15px;color:var(--pi);background:transparent;border:0;border-bottom:1px solid var(--pi);padding:6px 4px;width:min(100%,360px)}
+.bt{font:13px "IBM Plex Mono",monospace;background:var(--pi);color:var(--paper);border:0;padding:7px 16px;margin-left:8px;cursor:pointer}.bt:disabled{opacity:.5}
+#sum{display:none;text-align:center;background:var(--paper);padding:26px;margin-top:36px;font:13px "IBM Plex Mono",monospace}#sum.show{display:block;animation:fd .6s}
+#sum b{display:block;font:italic 500 56px "Cormorant Garamond",serif;color:var(--acc)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="fl" viewBox="-50 -50 100 100"><g fill="#fff"><ellipse cx="0" cy="-26" rx="14" ry="23"/><ellipse cx="0" cy="-26" rx="14" ry="23" transform="rotate(72)"/><ellipse cx="0" cy="-26" rx="14" ry="23" transform="rotate(144)"/><ellipse cx="0" cy="-26" rx="14" ry="23" transform="rotate(216)"/><ellipse cx="0" cy="-26" rx="14" ry="23" transform="rotate(288)"/></g><circle r="6" fill="#4a6c99"/></symbol></defs></svg>
+<div id="fx"></div>
+<nav id="nv"></nav>
+<main>
+<header class="hero"><div class="bl"><svg viewBox="0 0 300 340"><g><path d="M60 330C80 250 130 190 200 120" stroke="#fff" stroke-width="3" fill="none"/><g fill="#fff"><ellipse cx="100" cy="250" rx="12" ry="22" transform="rotate(-50 100 250)"/><ellipse cx="135" cy="205" rx="12" ry="22" transform="rotate(30 135 205)"/><ellipse cx="165" cy="165" rx="12" ry="22" transform="rotate(-40 165 165)"/><ellipse cx="195" cy="125" rx="12" ry="22" transform="rotate(35 195 125)"/></g></g><use href="#fl" x="30" y="40" width="80" height="80"/><use href="#fl" x="190" y="170" width="110" height="110"/><use href="#fl" x="20" y="150" width="50" height="50"/><use href="#fl" x="215" y="20" width="60" height="60"/></svg></div>
+<div class="pa"><div class="ti">modern topics</div>
+<p>topics: <u>environment</u> · <u>teen health</u> · <u>modernization</u> · <u>multiculturalism</u><br>level: A2–B1</p>
+<p>20 cụm từ · 4 đoạn văn · 12 câu đọc hiểu · 30 câu từ vựng · 15 câu dịch</p>
+<p>Học cụm từ bằng flashcard (nghĩa tiếng Việt hiện trước), nghe giọng đọc từng đoạn văn, rồi làm bài tập. Chọn xong là có đáp án và giải thích ngay.</p></div></header>
+<div id="app"></div>
+<div id="sum"><span>hoàn thành!</span><b id="fs"></b><span id="fp"></span></div>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const V=`Cut down on|Phrasal verb|/kʌt daʊn ɒn/|Cắt giảm bớt
+Sort out|Phrasal verb|/sɔːt aʊt/|Phân loại, giải quyết
+Reduce one’s carbon footprint|Collocation|/rɪˈdjuːs ˈkɑːbən ˈfʊtprɪnt/|Giảm lượng khí thải carbon
+Take action|Collocation|/teɪk ˈækʃn/|Hành động
+Irreversible|Adj|/ˌɪrɪˈvɜːsəbl/|Không thể cứu vãn, đảo ngược
+Suffer from|Phrasal verb|/ˈsʌfə frɒm/|Chịu đựng, mắc phải (bệnh)
+Stay up late|Collocation|/steɪ ʌp leɪt/|Thức khuya
+Stay in shape|Collocation|/steɪ ɪn ʃeɪp/|Giữ dáng, khỏe mạnh
+Take up|Phrasal verb|/teɪk ʌp/|Bắt đầu (một sở thích, môn thể thao)
+Face-to-face|Adv/Adj|/ˌfeɪs tə ˈfeɪs/|Trực tiếp, mặt đối mặt
+Tear down|Phrasal verb|/teə daʊn/|Phá dỡ (tòa nhà)
+Speed up|Phrasal verb|/spiːd ʌp/|Đẩy nhanh, tăng tốc
+Hold on to|Phrasal verb|/həʊld ɒn tuː/|Giữ gìn, bám víu vào
+Figure out|Phrasal verb|/ˈfɪɡər aʊt/|Tìm ra (giải pháp, cách làm)
+Cultural preservation|Noun phr.|/ˈkʌltʃərəl ˌprezəˈveɪʃn/|Sự bảo tồn văn hóa
+Mix with|Phrasal verb|/mɪks wɪð/|Hòa nhập với, hòa trộn
+Break down|Phrasal verb|/breɪk daʊn/|Phá vỡ (rào cản, định kiến)
+Get along with|Phrasal verb|/ɡet əˈlɒŋ wɪð/|Hòa thuận với (ai đó)
+Look up to|Phrasal verb|/lʊk ʌp tuː/|Kính trọng, tôn trọng
+Cultural barrier|Noun phr.|/ˈkʌltʃərəl ˈbæriə/|Rào cản văn hóa`.split("\n").map(l=>l.split("|"));
+const P=[
+{k:"Đoạn 1",t:"Environmental Protection",vt:"Bảo vệ môi trường",
+en:"Climate change is one of the most serious challenges we face today. To protect the environment, we need to cut down on single-use plastics and sort out our daily rubbish for recycling. Planting more trees and using public transport can also help to reduce our carbon footprint. Everyone must take action immediately before the damage to our planet becomes irreversible.",
+vn:"Biến đổi khí hậu là một trong những thách thức nghiêm trọng nhất mà chúng ta phải đối mặt ngày nay. Để bảo vệ môi trường, chúng ta cần cắt giảm đồ nhựa dùng một lần và phân loại rác thải sinh hoạt hằng ngày để tái chế. Việc trồng thêm nhiều cây xanh và sử dụng phương tiện giao thông công cộng cũng có thể giúp giảm lượng khí thải carbon của chúng ta. Mọi người phải hành động ngay lập tức trước khi những thiệt hại đối với hành tinh của chúng ta trở nên không thể cứu vãn.",
+d:`1|What do we need to do with our daily rubbish?|Burn it|Sort it out for recycling|Throw it in the river|Eat it|1|Bài đọc: “sort out our daily rubbish for recycling”.
+2|How can public transport help the environment?|It creates more plastic|It cuts down trees|It helps reduce our carbon footprint|It makes the air hotter|2|Bài đọc: “using public transport can also help to reduce our carbon footprint”.
+3|When must everyone take action?|Next year|In the future|Immediately|When the damage is irreversible|2|Bài đọc: “Everyone must take action immediately before the damage ... becomes irreversible”.`},
+{k:"Đoạn 2",t:"Teenage Health",vt:"Sức khỏe thiếu niên",
+en:"Many teenagers today suffer from mental health issues because of academic pressure and social media. It is very easy for them to stay up late scrolling through their phones, which often leads to sleep deprivation. To stay in shape and keep a healthy mind, teenagers should take up a sport and spend more time talking face-to-face with their family and friends.",
+vn:"Nhiều thanh thiếu niên ngày nay mắc phải các vấn đề về sức khỏe tinh thần do áp lực học hành và mạng xã hội. Rất dễ để họ thức khuya lướt điện thoại, điều này thường dẫn đến việc thiếu ngủ. Để giữ dáng và duy trì một tâm trí khỏe mạnh, thanh thiếu niên nên bắt đầu chơi một môn thể thao và dành nhiều thời gian hơn để nói chuyện trực tiếp với gia đình và bạn bè.",
+d:`4|What causes mental health issues for teenagers?|Sports|Academic pressure and social media|Taking up hobbies|Family|1|Bài đọc: “because of academic pressure and social media”.
+5|What does staying up late looking at phones lead to?|Better grades|A healthy mind|Sleep deprivation|Staying in shape|2|Bài đọc: “which often leads to sleep deprivation”.
+6|What should teenagers do to keep a healthy mind?|Talk face-to-face with friends|Use more social media|Stay up later|Stop playing sports|0|Bài đọc khuyên nói chuyện trực tiếp (face-to-face) với gia đình và bạn bè.`},
+{k:"Đoạn 3",t:"Modernization",vt:"Hiện đại hóa",
+en:"Modernization has completely changed the way we live and work in cities. Old buildings are regularly torn down to make space for high-tech skyscrapers and shopping malls. While this helps to speed up economic growth, many people feel nostalgic and want to hold on to their traditional values. A city must carefully figure out how to balance modern development with cultural preservation.",
+vn:"Sự hiện đại hóa đã thay đổi hoàn toàn cách chúng ta sống và làm việc ở các thành phố. Những tòa nhà cũ thường xuyên bị phá dỡ để nhường chỗ cho các tòa nhà chọc trời công nghệ cao và trung tâm thương mại. Mặc dù điều này giúp đẩy nhanh sự tăng trưởng kinh tế, nhiều người vẫn cảm thấy hoài niệm và muốn giữ gìn những giá trị truyền thống của họ. Một thành phố phải cẩn thận tìm ra cách cân bằng giữa sự phát triển hiện đại và việc bảo tồn văn hóa.",
+d:`7|Why are old buildings torn down?|To plant trees|To build skyscrapers and malls|To preserve culture|To stop economic growth|1|Bài đọc: “torn down to make space for high-tech skyscrapers and shopping malls”.
+8|How do some people feel about traditional values?|They want to hold on to them|They want to tear them down|They hate them|They want to forget them|0|Bài đọc: “want to hold on to their traditional values”.
+9|What does a city need to balance?|Cars and buses|Shopping malls and skyscrapers|Modern development and cultural preservation|Day and night|2|Bài đọc: “balance modern development with cultural preservation”.`},
+{k:"Đoạn 4",t:"Multiculturalism",vt:"Đa văn hóa",
+en:"Living in a multicultural society brings numerous benefits to everyone. When people from different backgrounds mix with each other, they can learn new languages, try exotic foods, and understand diverse perspectives. However, it is essential to break down cultural barriers and stereotypes to avoid misunderstandings. We should always try to get along with our neighbors and look up to people who promote global peace and harmony.",
+vn:"Sống trong một xã hội đa văn hóa mang lại vô số lợi ích cho mọi người. Khi những người từ các nền tảng khác nhau hòa nhập với nhau, họ có thể học ngôn ngữ mới, thử các món ăn mới lạ và hiểu được những góc nhìn đa dạng. Tuy nhiên, điều cần thiết là phải phá vỡ những rào cản và định kiến văn hóa để tránh những sự hiểu lầm. Chúng ta nên luôn cố gắng hòa thuận với hàng xóm của mình và tôn trọng (kính trọng) những người thúc đẩy hòa bình và sự hòa hợp toàn cầu.",
+d:`10|What can people do when they mix with each other?|Fight|Learn languages and try exotic foods|Build barriers|Tear down buildings|1|Bài đọc: “they can learn new languages, try exotic foods”.
+11|Why is it important to break down cultural barriers?|To avoid misunderstandings|To make money|To speed up growth|To cause problems|0|Bài đọc: “break down cultural barriers and stereotypes to avoid misunderstandings”.
+12|Who should we look up to?|People who start wars|People who promote global peace|People who sleep late|People who cut down trees|1|Bài đọc: “look up to people who promote global peace and harmony”.`}
+];
+const MC=`1|You need to ___ eating fast food if you want to be healthier.|cut down on|mix with|take up|tear down|0|cut down on = cắt giảm bớt.
+2|We spent the whole morning trying to ___ the rubbish for recycling.|speed up|sort out|hold on to|look up to|1|sort out = phân loại.
+3|Riding a bicycle instead of driving helps ___.|break down barriers|speed up traffic|reduce your carbon footprint|stay up late|2|reduce your carbon footprint = giảm lượng khí thải carbon.
+4|The government must ___ to stop the river from getting more polluted.|take action|suffer from|figure out|get along with|0|take action = hành động.
+5|If we don’t protect the forest now, the damage will be ___.|face-to-face|irreversible|cultural|modern|1|irreversible = không thể cứu vãn.
+6|Many old people ___ joint pain in the winter.|mix with|take up|suffer from|cut down on|2|suffer from = chịu đựng, mắc phải (bệnh).
+7|Don’t ___ playing video games before the big exam tomorrow!|stay up late|figure out|speed up|tear down|0|stay up late = thức khuya.
+8|She goes to the gym three times a week to ___.|stay in shape|hold on to|look up to|break down|0|stay in shape = giữ dáng.
+9|He decided to ___ photography as a new hobby last month.|sort out|take up|tear down|mix with|1|take up = bắt đầu một sở thích mới.
+10|I prefer to have a ___ meeting rather than calling on the phone.|irreversible|face-to-face|cultural|modern|1|face-to-face = trực tiếp, mặt đối mặt (đối lập với gọi điện).
+11|They plan to ___ the old factory to build a new hospital.|take up|tear down|speed up|look up to|1|tear down = phá dỡ.
+12|We need to ___ the production process to meet the deadline.|speed up|cut down on|sort out|suffer from|0|speed up = đẩy nhanh (để kịp hạn chót).
+13|Even when she moved to the city, she tried to ___ her village traditions.|hold on to|break down|get along with|tear down|0|hold on to = giữ gìn, bám víu vào.
+14|It took me a long time to ___ how to use this new software.|take up|mix with|figure out|stay up late|2|figure out = tìm ra, hiểu ra.
+15|The museum plays an important role in ___ in our city.|cultural preservation|carbon footprint|sleep deprivation|economic growth|0|cultural preservation = bảo tồn văn hóa (vai trò của bảo tàng).
+16|When you travel, it is fun to ___ the local people.|tear down|mix with|take up|cut down on|1|mix with = hòa nhập, giao lưu với.
+17|Education is the best way to ___ stereotypes between countries.|break down|speed up|hold on to|stay up late|0|break down stereotypes = phá vỡ định kiến.
+18|I am very lucky because I ___ my new roommates very well.|figure out|sort out|get along with|suffer from|2|get along with = hòa thuận với.
+19|Every child should have a good teacher to ___.|tear down|cut down on|take action|look up to|3|look up to = kính trọng, ngưỡng mộ.
+20|Language difference is often a big ___ in international business.|cultural barrier|carbon footprint|preservation|modern development|0|cultural barrier = rào cản văn hóa.
+21|We must ___ the amount of electricity we use at home.|cut down on|take up|mix with|get along with|0|cut down on = cắt giảm.
+22|Can you help me ___ these old clothes into boxes?|sort out|look up to|stay up late|break down|0|sort out = phân loại.
+23|Solar energy is a great way to ___.|reduce your carbon footprint|cause sleep deprivation|tear down buildings|stay up late|0|Năng lượng mặt trời giúp giảm lượng khí thải carbon.
+24|The mayor promised to ___ to improve road safety.|take action|suffer from|hold on to|mix with|0|take action = hành động.
+25|She ___ a terrible headache yesterday morning.|suffered from|took up|sped up|figured out|0|suffer from chia quá khứ: suffered from.
+26|___ every night is very bad for your brain.|Staying up late|Getting along with|Cutting down on|Taking action|0|V-ing làm chủ ngữ: Staying up late (thức khuya) hại não.
+27|Eating healthy salads helps him ___.|stay in shape|break down|tear down|suffer from|0|stay in shape = giữ dáng.
+28|I want to ___ playing the piano in my free time.|take up|sort out|speed up|look up to|0|take up = bắt đầu (sở thích).
+29|We need to ___ the internet connection; it is too slow!|speed up|tear down|hold on to|cut down on|0|speed up = tăng tốc (mạng chậm).
+30|He is a wise man that everyone in the village ___.|looks up to|breaks down|suffers from|figures out|0|looks up to = kính trọng (chia số ít theo everyone).`;
+const TR=[["Tôi cần cắt giảm đường.",["I need to cut down on sugar"]],["Vui lòng phân loại rác này.",["Please sort out this rubbish","Please sort out this garbage","Please sort out this trash"]],["Chúng ta phải hành động ngay bây giờ.",["We must take action now","We have to take action now"]],["Cô ấy mắc bệnh (chịu đựng) mất ngủ.",["She suffers from lack of sleep","She suffers from insomnia"]],["Đừng thức khuya tối nay.",["Don’t stay up late tonight","Do not stay up late tonight"]],["Tôi tập thể dục để giữ dáng.",["I exercise to stay in shape"]],["Anh ấy đã bắt đầu (chơi) bóng đá.",["He took up football","He has taken up football"]],["Chúng ta cần nói chuyện trực tiếp (mặt đối mặt).",["We need to talk face-to-face"]],["Họ sẽ phá dỡ ngôi nhà cũ đó.",["They will tear down that old house"]],["Bạn có thể đẩy nhanh công việc không?",["Can you speed up the work"]],["Tôi không thể tìm ra câu trả lời.",["I cannot figure out the answer","I can’t figure out the answer","I can’t figure the answer out"]],["Hãy giữ gìn văn hóa của bạn.",["Hold on to your culture"]],["Chúng tôi phải phá vỡ rào cản này.",["We must break down this barrier","We have to break down this barrier"]],["Tôi rất hòa thuận với anh trai tôi.",["I get along with my brother very well","I get along very well with my brother"]],["Bọn trẻ kính trọng cha của chúng.",["The children look up to their father"]]];
+/* sound + voice */
+let ac;function tone(f,t,d,ty){const o=ac.createOscillator(),g=ac.createGain();o.type=ty;o.frequency.value=f;g.gain.setValueAtTime(.15,ac.currentTime+t);g.gain.exponentialRampToValueAtTime(.001,ac.currentTime+t+d);o.connect(g);g.connect(ac.destination);o.start(ac.currentTime+t);o.stop(ac.currentTime+t+d)}
+function snd(ok){try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();if(ok){tone(660,0,.15,"sine");tone(880,.12,.25,"sine")}else{tone(220,0,.18,"sawtooth");tone(150,.15,.3,"sawtooth")}}catch(e){}}
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang="en-US";u.rate=.9;speechSynthesis.speak(u)}catch(e){}}
+/* bg flowers */
+const fx=$("#fx");for(let i=0;i<7;i++){const z=60+Math.random()*120;fx.insertAdjacentHTML("beforeend",`<svg style="left:${Math.random()*95}%;top:${Math.random()*95}%;width:${z}px;height:${z}px;animation-delay:${-Math.random()*20}s;animation-duration:${20+Math.random()*14}s"><use href="#fl" width="${z}" height="${z}"/></svg>`)}
+/* build */
+const QS=[];let ok=0,tot=0;
+const mq=(l,sp)=>{const p=l.split("|");return{n:p[0],s:p[1],o:p.slice(2,6),a:+p[6],e:p[7]}};
+const qh=q=>{const i=QS.push({t:"m",q})-1;return `<div class="q" data-i="${i}"><p><small>câu ${q.n}</small><br>${q.s.replace("___","<b>______</b>")}</p>${q.o.map((o,j)=>`<button class="o" data-j="${j}">${"ABCD"[j]}. ${o}</button>`).join("")}<div class="ex"></div></div>`};
+const hl=new RegExp("("+["cut down on","sort out","carbon footprint","take action","irreversible","suffer from","stay up late","stay in shape","take up","face-to-face","torn down","speed up","hold on to","figure out","cultural preservation","mix with","break down","get along with","look up to","cultural barriers"].join("|")+")","gi");
+const vt=(a,b)=>`<table><tr><th>cụm từ</th><th>loại</th><th>phiên âm</th><th>nghĩa</th></tr>${V.slice(a,b).map(v=>`<tr><td><b>${v[0]}</b> <button class="sp" data-w="${v[0]}">🔊</button></td><td>${v[1]}</td><td class="ip">${v[2]}</td><td>${v[3]}</td></tr>`).join("")}</table>`;
+let H=`<section class="rv" id="s0"><div class="pp"><div class="lb">01 / flashcard</div><h2>Flashcard</h2><p class="sub">Xem nghĩa tiếng Việt trước, chạm thẻ để lật sang cụm từ tiếng Anh.</p><div class="fcw"><div class="fc" id="fc"></div></div><div class="ctl"><button class="btn" id="pv">‹ trước</button><span id="fi"></span><button class="btn" id="nx">sau ›</button><button class="btn" id="sh">trộn thẻ</button></div></div></section>`;
+P.forEach((p,i)=>{H+=`<section class="rv" id="s${i+1}"><div class="pp"><div class="lb">0${i+2} / ${p.t.toLowerCase()}</div><h2>${p.t}</h2><p class="sub">${p.vt}</p><div class="bar"><button class="btn" data-p="${i}">🔊 nghe đoạn văn</button><button class="btn" data-x="1">■ dừng</button><button class="btn" data-v="${i}">bản dịch</button></div><div class="txt">${p.en.replace(hl,"<b>$1</b>")}</div><div class="vi" id="vi${i}">${p.vn}</div>${vt(i*5,i*5+5)}<div class="lb" style="margin-top:14px">reading comprehension</div>${p.d.split("\n").map(l=>qh(mq(l))).join("")}</div></section>`});
+H+=`<section class="rv" id="s5"><div class="pp"><div class="lb">06 / vocabulary</div><h2>Từ vựng</h2><p class="sub">30 câu trắc nghiệm.</p>${MC.split("\n").map(l=>qh(mq(l))).join("")}</div></section>`;
+H+=`<section class="rv" id="s6"><div class="pp"><div class="lb">07 / writing</div><h2>Dịch Việt – Anh</h2><p class="sub">15 câu. Dùng cụm từ trong bài, gõ rồi bấm kiểm tra (hoặc Enter).</p>${TR.map((t,k)=>{const i=QS.push({t:"t",q:t})-1;return `<div class="q" data-i="${i}"><p><small>câu ${k+1}</small><br>${t[0]}</p><input placeholder="gõ câu tiếng Anh" autocomplete="off"><button class="bt">kiểm tra</button><div class="ex"></div></div>`}).join("")}</div></section>`;
+$("#app").innerHTML=H;
+const N=QS.length,labs=["Flashcard",...P.map(p=>p.k),"Từ vựng","Dịch"];
+$("#nv").innerHTML=labs.map((l,i)=>`<a href="#s${i}">${l}</a>`).join("")+`<span class="sc" id="sc">đúng 0/0</span>`;
+function done(g){tot++;if(g)ok++;snd(g);$("#sc").textContent=`đúng ${ok}/${tot}`;if(tot==N){$("#fs").textContent=`${ok} / ${N}`;$("#fp").textContent=`${Math.round(ok/N*100)}% câu đúng`;$("#sum").classList.add("show");$("#sum").scrollIntoView({behavior:"smooth",block:"center"})}}
+const nz=s=>s.toLowerCase().replace(/[’]/g,"").replace(/'/g,"").replace(/-/g," ").replace(/[^a-z ]/g,"").replace(/\s+/g," ").trim();
+function chk(q){const inp=q.querySelector("input"),bt=q.querySelector(".bt");if(!inp||inp.disabled||!inp.value.trim())return;const t=QS[q.dataset.i].q,g=t[1].some(a=>nz(a)==nz(inp.value));inp.disabled=bt.disabled=true;inp.style.borderColor=g?"var(--ok)":"var(--bad)";const x=q.querySelector(".ex");x.innerHTML=`${g?"✔ Chính xác.":"✘ Chưa khớp đáp án gợi ý."} Gợi ý: <b>${t[1][0]}.</b> <button class="sp" data-w="${t[1][0]}">🔊</button>`;x.classList.add("show");done(g)}
+document.body.addEventListener("click",e=>{const t=e.target;
+ if(t.dataset.w){say(t.dataset.w);return}
+ if(t.dataset.p){say(P[t.dataset.p].en);return}
+ if(t.dataset.x){try{speechSynthesis.cancel()}catch(x){}return}
+ if(t.dataset.v){$("#vi"+t.dataset.v).classList.toggle("show");return}
+ if(t.classList.contains("bt")){chk(t.closest(".q"));return}
+ const b=t.closest(".o");if(!b||b.disabled)return;const q=b.closest(".q"),it=QS[q.dataset.i].q,g=+b.dataset.j==it.a,bs=q.querySelectorAll(".o");
+ bs.forEach(x=>x.disabled=true);bs[it.a].classList.add("ok");if(!g)b.classList.add("no");
+ const x=q.querySelector(".ex");x.innerHTML=`${g?"✔ Chính xác.":"✘ Chưa đúng."} Đáp án: <b>${"ABCD"[it.a]}</b>. ${it.e}`;x.classList.add("show");done(g)});
+document.body.addEventListener("keydown",e=>{if(e.key=="Enter"&&e.target.tagName=="INPUT")chk(e.target.closest(".q"))});
+/* flashcards */
+let D=V.slice(),ci=0;
+function card(){const v=D[ci];$("#fc").classList.remove("f");$("#fc").innerHTML=`<div><small>nghĩa tiếng Việt</small><div class="vn">${v[3]}</div><small>chạm để lật</small></div><div class="bk"><h3>${v[0]}</h3><span class="ip">${v[2]} · ${v[1]}</span><button class="btn" style="margin-top:14px" data-w="${v[0]}">🔊 nghe</button></div>`;$("#fi").textContent=`${ci+1} / ${D.length}`}
+$("#fc").onclick=e=>{if(e.target.dataset.w)return;$("#fc").classList.toggle("f")};
+$("#pv").onclick=()=>{ci=(ci+D.length-1)%D.length;card()};$("#nx").onclick=()=>{ci=(ci+1)%D.length;card()};$("#sh").onclick=()=>{D.sort(()=>Math.random()-.5);ci=0;card()};card();
+/* reveal + nav */
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.03});
+document.querySelectorAll(".rv").forEach(s=>io.observe(s));
+const nl=[...document.querySelectorAll("nav a")],io2=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){nl.forEach(a=>a.classList.toggle("on",a.getAttribute("href")=="#"+x.target.id))}}),{rootMargin:"-40% 0px -55% 0px"});
+document.querySelectorAll("section").forEach(s=>io2.observe(s));
+</script>
+</body>
+</html>
